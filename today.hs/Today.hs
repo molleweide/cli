@@ -2,7 +2,7 @@ module Today (Day(..), getCurrentTimestamp, getDayFromTimestamp) where
 import Data.Time.Clock.POSIX(getPOSIXTime)
 
 data Day = Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
-    deriving (Show, Enum)
+    deriving (Eq, Show, Enum)
 
 -- Returns the current day
 getDayFromTimestamp :: Integer -> Day
@@ -30,4 +30,3 @@ calculateElapsedDays ts = ts `div` 86400
 -- add 3 beacuse the 01.01.1970 was a Thursday
 calculateDayIndex :: Integer -> Integer
 calculateDayIndex x = (x + 3) `mod` 7
-
