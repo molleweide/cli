@@ -10,36 +10,6 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_haskell */
-/* package base-4.14.3.0 */
-#ifndef VERSION_base
-#define VERSION_base "4.14.3.0"
-#endif /* VERSION_base */
-#ifndef MIN_VERSION_base
-#define MIN_VERSION_base(major1,major2,minor) (\
-  (major1) <  4 || \
-  (major1) == 4 && (major2) <  14 || \
-  (major1) == 4 && (major2) == 14 && (minor) <= 3)
-#endif /* MIN_VERSION_base */
-/* package haskell-say-1.0.0.0 */
-#ifndef VERSION_haskell_say
-#define VERSION_haskell_say "1.0.0.0"
-#endif /* VERSION_haskell_say */
-#ifndef MIN_VERSION_haskell_say
-#define MIN_VERSION_haskell_say(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  0 || \
-  (major1) == 1 && (major2) == 0 && (minor) <= 0)
-#endif /* MIN_VERSION_haskell_say */
-/* package hspec-2.9.4 */
-#ifndef VERSION_hspec
-#define VERSION_hspec "2.9.4"
-#endif /* VERSION_hspec */
-#ifndef MIN_VERSION_hspec
-#define MIN_VERSION_hspec(major1,major2,minor) (\
-  (major1) <  2 || \
-  (major1) == 2 && (major2) <  9 || \
-  (major1) == 2 && (major2) == 9 && (minor) <= 4)
-#endif /* MIN_VERSION_hspec */
 
 /* tool gcc-13.0.0 */
 #ifndef TOOL_VERSION_gcc
@@ -122,8 +92,11 @@
   (major1) == 8 && (major2) == 10 && (minor) <= 7)
 #endif /* MIN_TOOL_VERSION_runghc */
 
+#ifndef CURRENT_PACKAGE_KEY
+#define CURRENT_PACKAGE_KEY "haskell-0.1.0.0-inplace"
+#endif /* CURRENT_packageKey */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "haskell-0.1.0.0-inplace-haskell"
+#define CURRENT_COMPONENT_ID "haskell-0.1.0.0-inplace"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"
