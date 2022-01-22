@@ -20,26 +20,6 @@
   (major1) == 4 && (major2) <  14 || \
   (major1) == 4 && (major2) == 14 && (minor) <= 3)
 #endif /* MIN_VERSION_base */
-/* package haskell-say-1.0.0.0 */
-#ifndef VERSION_haskell_say
-#define VERSION_haskell_say "1.0.0.0"
-#endif /* VERSION_haskell_say */
-#ifndef MIN_VERSION_haskell_say
-#define MIN_VERSION_haskell_say(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  0 || \
-  (major1) == 1 && (major2) == 0 && (minor) <= 0)
-#endif /* MIN_VERSION_haskell_say */
-/* package hspec-2.9.4 */
-#ifndef VERSION_hspec
-#define VERSION_hspec "2.9.4"
-#endif /* VERSION_hspec */
-#ifndef MIN_VERSION_hspec
-#define MIN_VERSION_hspec(major1,major2,minor) (\
-  (major1) <  2 || \
-  (major1) == 2 && (major2) <  9 || \
-  (major1) == 2 && (major2) == 9 && (minor) <= 4)
-#endif /* MIN_VERSION_hspec */
 
 /* tool gcc-13.0.0 */
 #ifndef TOOL_VERSION_gcc

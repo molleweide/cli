@@ -1,11 +1,11 @@
 module SayHello where
 
-import HaskellSay (haskellSay)
+-- import HaskellSay (haskellSay)
 
 sayHello :: IO ()
 sayHello = do
     putStrLn "Hello, Haskell!"
-    haskellSay "Hello, Haskell! You're using a function from another package!"
+    -- haskellSay "Hello, Haskell! You're using a function from another package!"
 
 
 
